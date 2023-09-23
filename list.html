@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- chartjs -->
     <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Document</title>
 </head>
 
@@ -16,7 +17,7 @@
     <header class="mb-5">
         <nav class="navbar navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Dashboard Criptomonedas</a>
+                <a class="navbar-brand" href="index.html">Dashboard Criptomonedas</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -39,8 +40,8 @@
                             </li>
                         </ul>
                         <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar Criptomoneda" aria-label="Buscar" id="searchInput">
-                            <button class="btn btn-warning" type="submit" id="searchCoin">Buscar</button>
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="searchInput">
+                            <button class="btn btn-warning" type="submit" id="searchCoin">Search</button>
                         </form>
                         <p class="text-light text-sm mt-3">Busca el grafico de tu criptomoneda favorita, su precio sera reflejado en dolares! <br> ej: polkadot, bitcoin, apecoin, solana etc...</p>
                     </div>
@@ -49,40 +50,11 @@
         </nav>
     </header>
     <main class="container m-auto">
-        <div class="row justify-content-center align-items-stretch">
-            
-            <div class="col-md-6">
-                <div class="card bg-dark">
-                    <h3 class="text-center pt-5 pb-5 text-light">Dominancia btc</h3>
-                    <div class="m-auto">
-                        <canvas id="pieChart" width="300" height="300" class="mb-3"></canvas>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6">
-                <div class="card bg-dark py-5 d-flex flex-column">
-                    <h3 class="text-light text-center mb-2" id="infoDisplay"></h3>
-                    <img class="img-fluid w-50 m-auto rounded-5" src="https://img.freepik.com/free-vector/digital-bitcoin-currency-symbol-vector-design_1017-10540.jpg?w=826&t=st=1695265928~exp=1695266528~hmac=1f60b617ab775b326abb314378f06940c16a7ac8a2e554da15bfb7917a0ab5a1" alt="">
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        
-            
             <div class="col-md-12 m-2">
                 <div class="card bg-dark">
                     <h3 class="text-center text-light pt-5" id="graphTitle"></h3>
                     <div class="col-12 m-auto">
-                        <canvas id="btc-chart" width="400" height="400"></canvas>
-                    </div>
-                    <div class="intervalbtn text-center mb-4">
-                        <button class="btn btn-success" id="interval7Days">7 Días</button>
-                        <button class="btn btn-success" id="interval14Days">14 Días</button>
-                        <button class="btn btn-success" id="interval30Days">30 Días</button>
-                        <button class="btn btn-success" id="intervalMax">Máx</button>
+                        <canvas id="cryptoChart" width="400" height="300"></canvas>
                     </div>
                 </div>
             </div>
@@ -102,14 +74,13 @@
 
 
     <!-- myjs -->
-    <script type="module" src="./javascript/graph.js"></script>
-    <script type="module" src="./javascript/apibtc.js"></script>
-    <script src="./javascript/apimkcap.js"></script>
-    <script src="./javascript/price.js"></script>
+    <script src="./javascript/list.js"></script>
 
     <!-- chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
     <!-- bs -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
