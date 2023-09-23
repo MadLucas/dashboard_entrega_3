@@ -11,4 +11,4 @@ fetch(priceUrl)
         // Parsear la respuesta JSON
         return response.json();
     })
-    .then((data) =
+    .then((data) ;
