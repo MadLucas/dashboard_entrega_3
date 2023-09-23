@@ -7,7 +7,7 @@ fetch(priceUrl)
     .then((response) => {
         // Verificar si la respuesta es exitosa (código de estado HTTP 200)
         if (!response.ok) {
-            throw new Error('Error en la solicitud a la API');
+            throw 'Error en la solicitud a la API';
         }
         // Parsear la respuesta JSON
         return response.json();

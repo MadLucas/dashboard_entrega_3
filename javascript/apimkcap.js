@@ -5,7 +5,7 @@ const apiUrl = 'https://api.coingecko.com/api/v3/global';
 fetch(apiUrl)
     .then((response) => {
         if (!response.ok) {
-            throw new Error('Error');
+            throw 'Error en la solicitud a la API';
         }
         return response.json();
     })
