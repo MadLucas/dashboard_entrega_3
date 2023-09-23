@@ -12,4 +12,4 @@ fetch(apiUrl)
         const cryptocurrencies = Object.keys(marketCapPercentageData);
         const percentages = Object.values(marketCapPercentageData);
         const colors = [
-            'darkred', 'blu
+            'darkred', 'bluu
