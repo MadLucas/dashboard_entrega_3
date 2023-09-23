@@ -20,7 +20,6 @@ OnchainBlog es una aplicación web ficticia que permite a los usuarios hacer seg
 
 3. **Gráfico de Dominancia:** En la parte superior de la página, hay un gráfico circular que representa la distribución de la dominancia en el mercado entre las principales criptomonedas.
 
-4. **Exploración Adicional:** Los usuarios también pueden explorar otras secciones del sitio web, como la página "Acerca de Nosotros", utilizando el menú de navegación en la parte superior de la página.
 
 ## Tecnologías Utilizadas
 
