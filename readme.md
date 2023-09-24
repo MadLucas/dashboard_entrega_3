@@ -1,6 +1,6 @@
 # Dashboard Criptomonedas
 
-OnchainBlog es una aplicación web ficticia que permite a los usuarios hacer seguimiento de las criptomonedas y ver gráficos de precios en tiempo real. Esta aplicación está diseñada para proporcionar información actualizada sobre las criptomonedas más populares, incluyendo su precio en dólares y su dominancia en el mercado.
+El dashboard es una aplicación web ficticia que permite a los usuarios hacer seguimiento de las criptomonedas y ver gráficos de precios en tiempo real. Esta aplicación está diseñada para proporcionar información actualizada sobre las criptomonedas más populares, incluyendo su precio en dólares y su dominancia en el mercado.
 
 ## Características
 
